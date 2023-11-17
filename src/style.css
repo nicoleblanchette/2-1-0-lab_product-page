@@ -4,6 +4,12 @@
   font-family: 'Lato', sans-serif;
   background-color: #eeeeee;
   box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body{
+
 }
 
 
@@ -13,7 +19,10 @@ header {
   align-items: center;
   background-color: #eeeeee;
   position: sticky;
-  top: 0
+  top: 0;
+  padding: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 nav ul {
@@ -26,9 +35,49 @@ logo {
   display: flex;
 }
 
-.feature {
-  display: flex;
+main {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
 
+.email-form {
+  text-align: center;
+}
+
+input[type=email] {
+  border: 1px solid black;
+}
+
+.feature {
+  text-align: left;
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.description {
+  margin: 0;
+  padding: 0;
+  margin-left: 2rem;
+}
+
+.prices {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  gap: 20px;
+}
+
+.product {
+  border: 1px solid black;
+  padding: 2rem;
+  padding-top: .5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
@@ -36,33 +85,50 @@ footer {
   margin-top: 30px;
   padding: 20px;
 }
+
 footer > ul {
   display: flex;
   list-style: none;
   justify-content: right;
   gap: 20px;
+  background-color: #dadada;
+}
+
+footer > ul > Li {
+  background-color: #dadada;
 }
 
 footer > p {
   display: flex;
   justify-content: flex-end;
+  background-color: #dadada;
 }
 
 @media (max-width: 720px) {
   .icon {display: none;}
   .description {text-align: center;}
-  header {flex-direction: column;
-  justify-content: center;}
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
   logo {justify-content: center;}
   nav ul {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-left: 0;
+  }
+  
+  .prices {
+    flex-direction: column;
   }
 }
 
 @media (min-width: 720px){
-  
-
-  
+  .feature {
+    display: grid;
+    grid-template-columns: 10% 80%;
+    justify-content: center;
+    align-items: center;
+  }
 }
