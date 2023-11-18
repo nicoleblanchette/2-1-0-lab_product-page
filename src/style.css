@@ -8,10 +8,6 @@
   margin-bottom: 0;
 }
 
-body{
-
-}
-
 
 header {
   display: flex;
@@ -31,6 +27,11 @@ nav ul {
   gap: 20px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 logo {
   display: flex;
 }
@@ -46,6 +47,16 @@ main {
 
 input[type=email] {
   border: 1px solid black;
+  margin: 1rem;
+  padding: .5rem;
+  width: 300px
+}
+
+input[type=submit] {
+  border: none;
+  background-color: #f3c00d;
+  padding: .7rem;
+  font-weight: 1000;
 }
 
 .feature {
@@ -64,6 +75,9 @@ input[type=email] {
   margin-left: 2rem;
 }
 
+
+
+
 .prices {
   display: flex;
   justify-content: center;
@@ -72,12 +86,41 @@ input[type=email] {
 }
 
 .product {
-  border: 1px solid black;
-  padding: 2rem;
-  padding-top: .5rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.product-name {
+  width: 100%;
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  font-weight: 600;
+}
+
+.product > h2 {
+  margin-top: .5rem;
+}
+
+.product-text {
+  margin: 1rem
+}
+
+.product-text > p {
+  padding: 5px;
+}
+
+.product input {
+  background-color: #f3c00d;
+  font-weight: 600;
+  border: none;
+  margin: 1rem;
+  padding: .5rem;
 }
 
 footer {
