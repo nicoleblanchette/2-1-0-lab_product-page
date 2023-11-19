@@ -7,17 +7,20 @@
   <script src="https://kit.fontawesome.com/394983e046.js" crossorigin="anonymous"></script>
   <title>thereministry</title>
 </head>
+
+<!-- I couldn't get the scroll points with the ID labels to work exactly how I wanted them to, I know
+I could just put them somewhere else in the code to artificially move it, but I was hoping there 
+was a better solution.  -->
 <body>
   <header>
     <logo>
-      <img src="" alt="">
-      <p>thereministry</p>
+      <p>THEREMINistry</p>
     </logo>
     <nav aria-labelledby="primary">
       <ul>
-        <li><a href="">Features</a></li>
-        <li><a href="">How It Works</a></li>
-        <li><a href="">Pricing</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#prices">Pricing</a></li>
       </ul>
     </nav>
   </header>
@@ -28,10 +31,11 @@
       <form>
         <input type="email" placeholder="Enter your email address">
         <br>
-        <input type="submit" value="GET STARTED">
+        <input class="button" type="submit" value="GET STARTED">
       </form>
-  </section>
+    </section>
 
+    <section id="features">
       <div class="feature">
         <div class="icon"><i class="fa-solid fa-fire-flame-curved fa-2xl" style="color: #ff8d00;"></i></div>
         <div class="description">
@@ -57,11 +61,13 @@
       </div>
      </section>
 
-     <iframe width="100%" height="562" src="https://www.youtube.com/embed/I6eTdPG3jo8" title="The Badgermin played properly" 
-     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-     allowfullscreen></iframe>
+     <section id="how-it-works">
+      <iframe width="100%" height="562" src="https://www.youtube.com/embed/I6eTdPG3jo8" title="The Badgermin played properly" 
+      frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen></iframe>
+     </section>
 
-     <section class="prices">
+     <section id="prices">
         <div class="product">
           <div class="product-name">MATRYOMIN</div>
           <h2>$600</h2>
@@ -105,7 +111,7 @@
       <li>Terms</li>
       <li>Contact</li>
     </ul>
-    <p>Copyright 2023, thereministry</p>
+    <p>Copyright 2023, THEREMINistry</p>
   </footer>
 </body>
 </html>
